@@ -2,4 +2,4 @@
 
 Css loaders collection.
 
-Live preview available @ [css3loaders.com](https://css3loaders.com)
+Live preview @ [css3loaders.com](https://css3loaders.com)
