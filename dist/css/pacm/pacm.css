@@ -1,0 +1,60 @@
+.pacm {
+  position: relative;
+  display: block;
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  background: transparent; }
+  .pacm::after, .pacm::before {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+    border: 35px solid #ffcc00; }
+  .pacm::before {
+    border-bottom-color: transparent;
+    -webkit-animation: chunk-top 0.6s ease infinite;
+            animation: chunk-top 0.6s ease infinite; }
+  .pacm:after {
+    border-right-color: transparent;
+    -webkit-animation: chunk-bottom 0.6s ease infinite;
+            animation: chunk-bottom 0.6s ease infinite; }
+
+@-webkit-keyframes chunk-top {
+  0%,
+  100% {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg); }
+  50% {
+    -webkit-transform: rotate(-80deg);
+            transform: rotate(-80deg); } }
+
+@keyframes chunk-top {
+  0%,
+  100% {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg); }
+  50% {
+    -webkit-transform: rotate(-80deg);
+            transform: rotate(-80deg); } }
+
+@-webkit-keyframes chunk-bottom {
+  0%,
+  100% {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg); }
+  50% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); } }
+
+@keyframes chunk-bottom {
+  0%,
+  100% {
+    -webkit-transform: rotate(-45deg);
+            transform: rotate(-45deg); }
+  50% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); } }
+
+
+/*# sourceMappingURL=pacm.css.map*/

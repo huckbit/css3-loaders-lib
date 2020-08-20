@@ -1,0 +1,31 @@
+.square-wheel {
+  position: relative;
+  display: block;
+  height: 70px;
+  width: 70px;
+  background-color: #eeeeee;
+  border-radius: 5px;
+  animation: spin 4s ease infinite;
+  &::before {
+    content: "";
+    display: block;
+    position: relative;
+    top: 17px;
+    left: 17px;
+    height: 35px;
+    width: 35px;
+    background-color: #1abc9c;
+    animation: spin 2s ease infinite;
+  }
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(180deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}

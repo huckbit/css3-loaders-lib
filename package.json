@@ -1,0 +1,38 @@
+{
+  "name": "css3-loaders-lib",
+  "version": "1.0.0",
+  "description": "css3loaders loaders library",
+  "main": "index.js",
+  "author": "Massimiliano Ranauro <huckbit@gmail.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/huckbit/css3-loaders-lib"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.10.5",
+    "@babel/core": "^7.11.1",
+    "@babel/preset-env": "^7.11.0",
+    "autoprefixer": "^9.8.6",
+    "babel-cli": "^6.26.0",
+    "babel-loader": "^8.1.0",
+    "babel-preset-env": "^1.7.0",
+    "css-loader": "^4.2.1",
+    "eslint": "^7.7.0",
+    "gulp": "^4.0.2",
+    "mini-css-extract-plugin": "^0.10.0",
+    "node-sass": "^4.14.1",
+    "optimize-css-assets-webpack-plugin": "^5.0.3",
+    "postcss-loader": "^3.0.0",
+    "postcss-preset-env": "^6.7.0",
+    "sass-loader": "^9.0.3",
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12",
+    "webpack-fix-style-only-entries": "^0.5.1",
+    "webpack-merge": "^5.1.2"
+  },
+  "scripts": {
+    "webpack": "webpack --config webpack.config.dev.js",
+    "build": "webpack --config webpack.config.dev.js && webpack --config webpack.config.prod.js"
+  }
+}

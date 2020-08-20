@@ -1,0 +1,43 @@
+.pacm {
+  position: relative;
+  display: block;
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  background: transparent;
+  &::after,
+  &::before {
+    content: "";
+    display: block;
+    position: absolute;
+    border-radius: 50%;
+    border: 35px solid #ffcc00;
+  }
+  &::before {
+    border-bottom-color: transparent;
+    animation: chunk-top 0.6s ease infinite;
+  }
+  &:after {
+    border-right-color: transparent;
+    animation: chunk-bottom 0.6s ease infinite;
+  }
+}
+
+@keyframes chunk-top {
+  0%,
+  100% {
+    transform: rotate(-45deg);
+  }
+  50% {
+    transform: rotate(-80deg);
+  }
+}
+@keyframes chunk-bottom {
+  0%,
+  100% {
+    transform: rotate(-45deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+}

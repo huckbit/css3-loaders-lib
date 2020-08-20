@@ -1,0 +1,64 @@
+.twins {
+  background: #cdaeda;
+  position: relative;
+  display: block;
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  &::after,
+  &::before {
+    content: "";
+    display: block;
+    height: 70px;
+    width: 70px;
+    border-radius: 50%;
+  }
+  &::after {
+    width: 50px;
+    height: 50px;
+    background: #3498db;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    animation: move-left 2s ease infinite;
+  }
+  &::before {
+    width: 50px;
+    height: 50px;
+    background: #2c3e50;
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    animation: move-right 2s ease infinite;
+  }
+}
+
+@keyframes move-left {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(20px) scale(1.2);
+  }
+  50% {
+    transform: translateX(-20px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+@keyframes move-right {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-20px) scale(1.2);
+    background: #3498db;
+  }
+  50% {
+    transform: translateX(20px);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}

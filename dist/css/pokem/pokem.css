@@ -1,0 +1,44 @@
+.pokem {
+  position: relative;
+  display: block;
+  height: 70px;
+  width: 70px;
+  border-radius: 50%;
+  background-color: #eeeeee; }
+  .pokem::after, .pokem::before {
+    content: "";
+    border-radius: 50%; }
+  .pokem::before {
+    position: absolute;
+    border: 35px solid transparent;
+    border-top-color: #d82b2e;
+    top: 0;
+    left: 0;
+    -webkit-animation: air-spin 2s linear infinite;
+            animation: air-spin 2s linear infinite; }
+  .pokem:after {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    height: 30px;
+    width: 30px;
+    background-color: #3a85d9; }
+
+@-webkit-keyframes air-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
+
+@keyframes air-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg); }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg); } }
+
+
+/*# sourceMappingURL=pokem.css.map*/
