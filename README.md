@@ -2,4 +2,4 @@
 
 Css loaders collection.
 
-Demo site [css3loaders.com](https://css3loaders.com)
+Demo site: [css3loaders.com](https://css3loaders.com)
